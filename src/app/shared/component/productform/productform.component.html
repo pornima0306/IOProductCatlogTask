@@ -1,0 +1,16 @@
+    <div class="form-group">
+    <strong><label for="productname">Product Name</label></strong>
+    <input type="text" id="productname" [(ngModel)]="productname" class="form-control">
+  </div>
+  <div class="form-group">
+    <strong><label for="productDescription">Product Description</label></strong>
+    <input type="text" id="productDescription"  [(ngModel)]="productDescription" class="form-control">
+  </div>
+
+  <div class="mb-3">
+    <!-- <button class="btn btn-info mr-4" (click)="addProduct()">Add as Product</button>
+    <button class="btn btn-warning" (click)="addCatlog('Catlog')">Add as Catlog</button> -->
+
+    <button class="btn btn-info mr-4" (click)="addProductDetails('Product')">Add as Product</button>
+    <button class="btn btn-warning" (click)="addProductDetails('Catlog')">Add as Catlog</button>
+  </div>

@@ -1,0 +1,8 @@
+<div class="card mb-3 alert" [ngClass]="{'bg-info' :product.pType === 'Product', 'bg-warning': product.pType === 'Catlog', 'text-white' : product.pType === 'Product'}" *ngFor="let product of cardArray">
+    <div class="card-header">
+      {{product.pName}}
+    </div>
+    <div class="card-body">
+      {{product.pDescription}}
+    </div>
+  </div>
